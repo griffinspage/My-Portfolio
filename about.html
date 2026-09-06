@@ -3,24 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About — Griffins Oinde</title>
+    <link class="favicon" rel="icon" type="image" href="download.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="about-page">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <header>
         <div>
-            <!-- Image header -->
-        <img class="image-head" src="download.jpg">
+            <img class="image-head" src="download.jpg">
         </div>
         <div>
             <nav id="nav-links">
-                <a class="link-buttons" href="home.html">Home</a>
+                <a class="link-buttons" href="index.html">Home</a>
                 <a class="link-buttons" href="about.html">About</a>
                 <a class="link-buttons" href="projects.html">Projects</a>
-                <a class="link-buttons" href="contact.html">Contact</a>
+                <a id="contact" class="link-buttons" href="contact.html">Contact</a>
             </nav>
         </div>
-     </header>
-    
+    </header>
+
+    <main class="about-main">
+
+        <!-- Hero -->
+        <section class="hero-grid">
+            <div class="hero-copy reveal reveal-1">
+                <span class="badge-pill"><span class="badge-dot"></span>Ready to explore?</span>
+                <h1 class="about-title">I build transform ideas to realities<br>not just the part you see.</h1>
+                <p class="about-lead">
+                    I’m Griffins Oinde, a full-stack web developer passionate about 
+                    turning ideas into impactful digital experiences. I build modern, 
+                    intuitive applications across the frontend and backend, combining 
+                    creativity, problem-solving, and technology to create solutions that 
+                    are reliable, scalable, and built to make a difference.
+
+                </p>
+                <div class="tag-row">
+                    <span class="tag-pill">JavaScript</span>
+                    <span class="tag-pill">React</span>
+                    <span class="tag-pill">Node.js</span>
+                    <span class="tag-pill">Express</span>
+                    <span class="tag-pill">MongoDB</span>
+                </div>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="projects.html">View my work</a>
+                    <a class="btn-secondary" href="contact.html">Get in touch</a>
+                </div>
+            </div>
+            <div class="hero-photo-wrap reveal reveal-2">
+                <div class="hero-photo-frame">
+                    <img src="cover.png" alt="Griffins Oinde" class="hero-photo">
+                    <span class="photo-badge">
+                        <span class="badge-dot"></span> <href="contact.html">Contact me</href>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick facts -->
+        <section class="facts-grid">
+            <div class="fact-box">
+                <ion-icon name="layers-outline"></ion-icon>
+                <span class="fact-label">Full Stack</span>
+                <span class="fact-sub">Frontend &amp; backend</span>
+            </div>
+            <div class="fact-box">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <span class="fact-label">Clean Code</span>
+                <span class="fact-sub">Built to be maintained</span>
+            </div>
+            <div class="fact-box">
+                <ion-icon name="flash-outline"></ion-icon>
+                <span class="fact-label">Fast Iteration</span>
+                <span class="fact-sub">Ship, learn, refine</span>
+            </div>
+            <div class="fact-box">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+                <span class="fact-label">Clear Communication</span>
+                <span class="fact-sub">No jargon, no surprises</span>
+            </div>
+        </section>
+
+        <!-- What I build -->
+        <section class="about-split">
+            <div class="split-col">
+                <span class="split-index">Frontend</span>
+                <h2>Interfaces that hold up</h2>
+                <p>
+                    HTML, CSS, and JavaScript form the base. I build layouts that stay
+                    readable on a phone and a widescreen monitor alike, and I pay close
+                    attention to small details — spacing, contrast, load time — that most
+                    visitors won't consciously notice but will feel.
+                </p>
+            </div>
+            <div class="split-col">
+                <span class="split-index">Backend</span>
+                <h2>Logic that stays correct</h2>
+                <p>
+                    Node.js and Express handle the server side: routing, authentication,
+                    and the APIs that connect a frontend to real data. I design database
+                    schemas that match how the application is actually used, not just how
+                    it looks on day one.
+                </p>
+            </div>
+        </section>
+
+        <!-- Toolkit -->
+        <section class="about-toolkit">
+            <h2>Toolkit</h2>
+            <div class="toolkit-grid">
+                <div class="toolkit-group">
+                    <h3>Languages</h3>
+                    <div class="tag-row">
+                        <span class="tag-pill">JavaScript</span>
+                        <span class="tag-pill">HTML</span>
+                        <span class="tag-pill">CSS</span>
+                        <span class="tag-pill">Python</span>
+                    </div>
+                </div>
+                <div class="toolkit-group">
+                    <h3>Frontend</h3>
+                    <div class="tag-row">
+                        <span class="tag-pill">React</span>
+                        <span class="tag-pill">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="toolkit-group">
+                    <h3>Backend</h3>
+                    <div class="tag-row">
+                        <span class="tag-pill">Node.js</span>
+                        <span class="tag-pill">Express</span>
+                        <span class="tag-pill">REST APIs</span>
+                    </div>
+                </div>
+                <div class="toolkit-group">
+                    <h3>Data</h3>
+                    <div class="tag-row">
+                        <span class="tag-pill">MongoDB</span>
+                        <span class="tag-pill">MySQL</span>
+                        <span class="tag-pill">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="toolkit-group">
+                    <h3>Tools</h3>
+                    <div class="tag-row">
+                        <span class="tag-pill">Git &amp; GitHub</span>
+                        <span class="tag-pill">VS Code</span>
+                        <span class="tag-pill">Postman</span>
+                        <span class="tag-pill">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How I work -->
+        <section class="about-process">
+            <h2>How I work</h2>
+            <ol class="process-list">
+                <li>
+                    <span class="process-num">01</span>
+                    <div>
+                        <h3>Understand</h3>
+                        <p>Talk through the problem before touching a keyboard — what the
+                            user actually needs, not just what's easiest to build.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="process-num">02</span>
+                    <div>
+                        <h3>Architect</h3>
+                        <p>Design the structure first — pages, data models, and API
+                            contracts — before any code is committed.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="process-num">03</span>
+                    <div>
+                        <h3>Build</h3>
+                        <p>Develop frontend and backend together, testing each feature as
+                            it's written instead of leaving it for the end.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="process-num">04</span>
+                    <div>
+                        <h3>Ship</h3>
+                        <p>Deploy with care — checked, working, and ready for real
+                            users, not just a demo.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="process-num">05</span>
+                    <div>
+                        <h3>Iterate</h3>
+                        <p>Watch how it's actually used, and keep improving it from
+                            there — a project doesn't end at launch.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- What I bring -->
+        <section class="about-values">
+            <h2>What I bring</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="icon-tile"><ion-icon name="git-branch-outline"></ion-icon></div>
+                    <h3>Full-stack ownership</h3>
+                    <p>I can take a feature from interface to database without
+                        handing it off — fewer gaps, faster delivery.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon-tile"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+                    <h3>Code built to last</h3>
+                    <p>Readable, tested, and structured so the next person — including
+                        future me — can pick it up without guessing.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon-tile"><ion-icon name="people-outline"></ion-icon></div>
+                    <h3>Easy to work with</h3>
+                    <p>I ask questions early, explain trade-offs in plain terms, and
+                        keep people updated without needing to be chased.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon-tile"><ion-icon name="construct-outline"></ion-icon></div>
+                    <h3>Detail-oriented</h3>
+                    <p>Spacing, load time, edge cases — the details most people skip
+                        are usually the ones that matter most.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="about-cta">
+            <h2>Have a project in mind?</h2>
+            <p>Ready to take on impactful projects and exciting full-time opportunities.</p>
+            <a class="about-cta-button" href="contact.html">Get in touch</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a class="social-icons" href="https://www.linkedin.com/in/griffins-oinde-9a1b4a1b3/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="social-icons" href="https://github.com/griffinspage" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a class="social-icons" href="https://www.instagram.com/mc.gri_ffins" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+        <p>&copy; 2024 Griffins Oinde. All rights reserved.</p>
+    </footer>
 </body>
 </html>

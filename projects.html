@@ -3,23 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects — Griffins Oinde</title>
+    <link class="favicon" rel="icon" type="image" href="download.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="projects-page">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <header>
         <div>
-            <!-- Image header -->
-        <img class="image-head" src="download.jpg">
+            <img class="image-head" src="download.jpg">
         </div>
         <div>
             <nav id="nav-links">
-                <a class="link-buttons" href="home.html">Home</a>
+                <a class="link-buttons" href="index.html">Home</a>
                 <a class="link-buttons" href="about.html">About</a>
                 <a class="link-buttons" href="projects.html">Projects</a>
-                <a class="link-buttons" href="contact.html">Contact</a>
+                <a id="contact" class="link-buttons" href="contact.html">Contact</a>
             </nav>
         </div>
-     </header>
+    </header>
+
+    <main class="projects-main">
+
+        <!-- Hero -->
+        <section class="hero-grid">
+            <div class="hero-copy reveal reveal-1">
+                <span class="badge-pill"><span class="badge-dot"></span>Selected work</span>
+                <h1 class="about-title">Real projects, built end to end.</h1>
+                <p class="about-lead">
+                    A snapshot of what I've designed, built, and shipped — from the
+                    interface down to the database. Replace these with your own project
+                    names, descriptions, and links.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="contact.html">Work with me</a>
+                    <a class="btn-secondary" href="https://github.com/griffinspage" target="_blank">View GitHub</a>
+                </div>
+            </div>
+            <aside class="stack-panel reveal reveal-2">
+                <h3>Core stack</h3>
+                <div class="tag-row">
+                    <span class="tag-pill">React</span>
+                    <span class="tag-pill">Node.js</span>
+                    <span class="tag-pill">Express</span>
+                    <span class="tag-pill">MongoDB</span>
+                    <span class="tag-pill">PostgreSQL</span>
+                    <span class="tag-pill">REST APIs</span>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Featured project -->
+        <section class="project-featured">
+            <div class="featured-label">
+                <div class="icon-tile icon-tile-lg"><ion-icon name="cart-outline"></ion-icon></div>
+                <span class="split-index">Featured</span>
+            </div>
+            <div class="featured-body">
+                <span class="category-tag">E-Commerce · Full Stack</span>
+                <h2>E-Commerce Platform</h2>
+                <p><strong>The challenge:</strong> give a small retailer a real online
+                    store — product listings, cart, and checkout — without relying on a
+                    third-party platform.</p>
+                <p><strong>The result:</strong> a React storefront backed by a REST API
+                    that handles inventory, orders, and accounts through a relational
+                    database, with Stripe for payments.</p>
+                <div class="tag-row">
+                    <span class="tag-pill">React</span>
+                    <span class="tag-pill">Node.js</span>
+                    <span class="tag-pill">Express</span>
+                    <span class="tag-pill">PostgreSQL</span>
+                    <span class="tag-pill">Stripe API</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><ion-icon name="open-outline"></ion-icon>Live demo</a>
+                    <a href="#" target="_blank"><ion-icon name="logo-github"></ion-icon>Source code</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project grid -->
+        <section class="project-grid">
+
+            <article class="project-card">
+                <div class="icon-tile"><ion-icon name="checkbox-outline"></ion-icon></div>
+                <span class="category-tag">Productivity</span>
+                <h2>Task Manager App</h2>
+                <p>
+                    A collaborative task board with drag-and-drop status columns, due
+                    dates, and per-user assignments, backed by a Node.js API.
+                </p>
+                <div class="tag-row">
+                    <span class="tag-pill">React</span>
+                    <span class="tag-pill">Express</span>
+                    <span class="tag-pill">MongoDB</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><ion-icon name="open-outline"></ion-icon>Live demo</a>
+                    <a href="#" target="_blank"><ion-icon name="logo-github"></ion-icon>Source code</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="icon-tile"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+                <span class="category-tag">Real-Time</span>
+                <h2>Real-Time Chat App</h2>
+                <p>
+                    A messaging app with live updates over WebSockets, private rooms,
+                    and message history stored per conversation.
+                </p>
+                <div class="tag-row">
+                    <span class="tag-pill">JavaScript</span>
+                    <span class="tag-pill">Socket.io</span>
+                    <span class="tag-pill">MongoDB</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><ion-icon name="open-outline"></ion-icon>Live demo</a>
+                    <a href="#" target="_blank"><ion-icon name="logo-github"></ion-icon>Source code</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="icon-tile"><ion-icon name="newspaper-outline"></ion-icon></div>
+                <span class="category-tag">Content / CMS</span>
+                <h2>Blog CMS &amp; Dashboard</h2>
+                <p>
+                    A content management system with an admin dashboard for drafting,
+                    scheduling, and publishing posts, plus a public-facing blog.
+                </p>
+                <div class="tag-row">
+                    <span class="tag-pill">React</span>
+                    <span class="tag-pill">Node.js</span>
+                    <span class="tag-pill">MySQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><ion-icon name="open-outline"></ion-icon>Live demo</a>
+                    <a href="#" target="_blank"><ion-icon name="logo-github"></ion-icon>Source code</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="icon-tile"><ion-icon name="layers-outline"></ion-icon></div>
+                <span class="category-tag">Tooling</span>
+                <h2>Portfolio Site Builder</h2>
+                <p>
+                    A tool that lets freelancers assemble a portfolio page from
+                    reusable sections without writing HTML themselves.
+                </p>
+                <div class="tag-row">
+                    <span class="tag-pill">JavaScript</span>
+                    <span class="tag-pill">HTML</span>
+                    <span class="tag-pill">CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank"><ion-icon name="open-outline"></ion-icon>Live demo</a>
+                    <a href="#" target="_blank"><ion-icon name="logo-github"></ion-icon>Source code</a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="about-cta">
+            <h2>Want to see more?</h2>
+            <p>More work and code samples are on my GitHub.</p>
+            <a class="about-cta-button" href="https://github.com/griffinspage" target="_blank">Visit GitHub</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a class="social-icons" href="https://www.linkedin.com/in/griffins-oinde-9a1b4a1b3/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="social-icons" href="https://github.com/griffinspage" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a class="social-icons" href="https://www.instagram.com/mc.gri_ffins" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+        <p>&copy; 2024 Griffins Oinde. All rights reserved.</p>
+    </footer>
 </body>
 </html>
